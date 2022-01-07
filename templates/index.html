@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <center>
+    <div class="container">
+            <div class="center">
+  
+                <h1 class="center" style="background-color:powderblue;">My Computer Can read your face reaction smile plz!!!</h1>
+                <img src="{{url_for('static', filename='anger1.jpg')}}" align="middle" />
+                
+                
+                <form action= '/four_Emos' method="post">
+                    <input type="submit" name="submit_button" value="Check your emotion">
+                </form>
+            </div>
+        
+            <div>
+                <form action= "/two_Emos" method="post">
+                    <input type="submit" name="submit_button" value="Are you smiling">
+                </form>
+            </div>
+    </div>
+        </center>
+      
+      
+    </body>
+
+
+</html>
