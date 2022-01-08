@@ -2,5 +2,4 @@ Flask==2.0.2
 mediapipe==0.8.9.1
 opencv_python==4.5.4.58
 Pillow==9.0.0
-torch==1.10.0+cpu
-torchvision==0.11.1+cpu
+torch==https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp37-cp37m-linux_x86_64.whl
