@@ -1,5 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
-1.7.1+cpu
+torch==1.7.1+cpu
 torchvision==0.7.0+cpu
 Flask==2.0.2
 mediapipe==0.8.9.1
