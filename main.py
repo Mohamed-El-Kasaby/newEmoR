@@ -13,6 +13,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import datasets, transforms ,models
 import torch.optim as optim
+from starlette.responses import FileResponse
 
 import datetime
 import numpy as np
@@ -140,6 +141,10 @@ def gen_frames():
             image = buffer.tobytes()
             yield (b'--frame\r\n'
                    b'Content-Type: image/jpeg\r\n\r\n' + image + b'\r\n')
+            
+@app.get('/favicon.ico')
+async def favicon():
+    return FileResponse("./static/favicon.ico")
 
 @app.get("/")
 async def index(request: Request):
