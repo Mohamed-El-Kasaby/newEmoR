@@ -4,4 +4,5 @@ torchvision==0.10.1+cpu
 Flask==2.0.2
 mediapipe==0.8.9.1
 opencv_python==4.5.4.58
+opencv-python-headless==4.5.3.56
 Pillow==9.0.0
